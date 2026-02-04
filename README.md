@@ -16,7 +16,7 @@ Production-grade Spring Boot Starter for Camunda Platform 8.
 ### 1. Add Dependency
 ```xml
 <dependency>
-    <groupId>com.example.camunda</groupId>
+    <groupId>org.maverick.devtools</groupId>
     <artifactId>camunda-8-spring-boot-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 </dependency>

@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.example.camunda</groupId>
+    <groupId>org.maverick.devtools</groupId>
     <artifactId>camunda-8-spring-boot-root</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -34,12 +34,12 @@
         <dependencies>
             <!-- Project Modules -->
             <dependency>
-                <groupId>com.example.camunda</groupId>
+                <groupId>org.maverick.devtools</groupId>
                 <artifactId>camunda-8-spring-boot-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.example.camunda</groupId>
+                <groupId>org.maverick.devtools</groupId>
                 <artifactId>camunda-spring-boot-starter-test</artifactId>
                 <version>${project.version}</version>
             </dependency>

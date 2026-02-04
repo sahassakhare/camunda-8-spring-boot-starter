@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.example.camunda</groupId>
+        <groupId>org.maverick.devtools</groupId>
         <artifactId>camunda-8-spring-boot-root</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
@@ -32,12 +32,12 @@
             <version>2.6.0</version>
         </dependency>
         <dependency>
-            <groupId>com.example.camunda</groupId>
+            <groupId>org.maverick.devtools</groupId>
             <artifactId>camunda-8-spring-boot-starter</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.example.camunda</groupId>
+            <groupId>org.maverick.devtools</groupId>
             <artifactId>camunda-spring-boot-starter-test</artifactId>
             <version>${project.version}</version>
             <scope>test</scope>
