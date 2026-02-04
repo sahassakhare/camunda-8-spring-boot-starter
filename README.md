@@ -49,18 +49,30 @@ public class PaymentWorker {
 }
 ```
 
-## Modules
+## Architecture
 
-*   `camunda-spring-boot-starter-core`: Basic client configuration.
-*   `camunda-spring-boot-starter-worker`: Worker annotations and processor.
-*   `camunda-spring-boot-starter-deployment`: Deployment automation.
-*   `camunda-spring-boot-starter-test`: Testing utilities.
+*   **`camunda-8-spring-boot-starter`**: The single production-grade library containing all core, worker, and deployment logic.
+*   **`camunda-8-spring-boot-starter-test`**: Separate module for testing utilities (Testcontainers).
+*   **`examples/simple-app`**: A reference implementation demonstrating best practices.
 
-## Metrics
-The starter exposes the following metrics via Micrometer:
-*   `camunda.job.success` (Counter)
-*   `camunda.job.failure` (Counter)
-*   `camunda.job.duration` (Timer)
+## Best Practices
+This starter enforces several best practices out of the box:
+*   **Strong Typing**: Automatic POJO mapping for variables.
+*   **Error Handling**: Built-in support for `ZeebeBpmnError`.
+*   **Observability**: Metrics and MDC logging pre-configured.
 
-## Building
-Run `mvn clean install` to build all modules.
+## Building & Running
+1.  **Build the project**:
+    ```bash
+    mvn clean install
+    ```
+2.  **Run Local Cluster** (requires Docker/Podman):
+    ```bash
+    # Deploys Zeebe 8.4, Operate 8.4, and Elasticsearch
+    podman-compose up -d
+    ```
+3.  **Run Example App**:
+    ```bash
+    cd examples/simple-app
+    mvn spring-boot:run
+    ```
