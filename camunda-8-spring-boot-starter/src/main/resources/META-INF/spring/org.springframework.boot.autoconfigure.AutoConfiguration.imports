@@ -1,0 +1,3 @@
+com.example.camunda.core.config.ZeebeClientAutoConfiguration
+com.example.camunda.worker.config.ZeebeWorkerAutoConfiguration
+com.example.camunda.deployment.config.DeploymentAutoConfiguration

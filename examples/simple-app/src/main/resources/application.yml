@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: simple-app
+
+camunda:
+  zeebe:
+    broker:
+      gateway-address: "localhost:26500"
+    security:
+      plaintext: true
+    deployment:
+      enabled: true
+      resources: "classpath:process.bpmn"
+    worker:
+      threads: 5

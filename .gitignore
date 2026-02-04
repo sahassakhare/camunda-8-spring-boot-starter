@@ -1,0 +1,19 @@
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+logs/
+.idea/
+.vscode/
+*.iml
+.DS_Store
+.checkstyle
+.factorypath
+.project
+.settings/
+.classpath
+### Docker
+zeebe_data/
+elastic_data/
